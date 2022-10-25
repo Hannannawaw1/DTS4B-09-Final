@@ -88,7 +88,7 @@ const MovieList = () => {
           display: "flex",
           flexDirection: "row",
           flexWrap: "wrap",
-          justifyContent: "space-between",
+          justifyContent: "center",
         }}
       >
         {movies.map((movie) => (
