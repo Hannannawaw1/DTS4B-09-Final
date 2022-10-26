@@ -31,7 +31,7 @@ root.render(
               path="services"
               element={
                 <Box sx={{ mt: 10 }}>
-                  Streaming movies, Indonesian film, and film review.
+                  Listing trending movies for a week
                 </Box>
               }
             />
