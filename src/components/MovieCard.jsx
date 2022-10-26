@@ -10,12 +10,12 @@ import { DialogContent } from "@mui/material";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
-
 import { useState } from "react";
 
 import * as React from "react";
 
 const BASE_IMAGE_URL = "http://image.tmdb.org/t/p/original";
+
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -121,7 +121,7 @@ const MovieCard = ({ movie }) => {
                 mt: 4,
               }}
             >
-              Detail
+              Synposis
             </Button>
             <BootstrapDialog
               onClose={handleClose}
@@ -132,17 +132,18 @@ const MovieCard = ({ movie }) => {
                 id="customized-dialog-title"
                 onClose={handleClose}
               >
-                Sinopsis
+                Synopsis
               </BootstrapDialogTitle>
               <DialogContent dividers>
-                {/* <CardMedia
-                  id={movie.id}
-                  component="video"
-                  image={BASE_VIDEO_URL}
-                  title={movie.title}
-                  controls
-                /> */}
-                <Typography gutterBottom sx={{ textAlign: "justify" }}>
+                <CardMedia
+                  component="img"
+                  image={`${BASE_IMAGE_URL}${movie.backdrop_path}`}
+                  alt={movie.title}
+                />
+                <Typography
+                  gutterBottom
+                  sx={{ textAlign: "justify", mt: "1em" }}
+                >
                   {movie.overview}
                 </Typography>
               </DialogContent>

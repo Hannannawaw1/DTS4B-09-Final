@@ -9,7 +9,6 @@ import { Link, NavLink } from "react-router-dom";
 import UserLog from "./UserLog";
 
 const navItems = [
-  { text: "Indonesian", link: "/indonesian" },
   { text: "Pricing", link: "/pricing" },
   { text: "About", link: "/about" },
 ];

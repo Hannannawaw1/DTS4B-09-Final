@@ -37,10 +37,6 @@ root.render(
             />
           </Route>
           <Route
-            path="indonesian"
-            element={<Box sx={{ mt: 10 }}>Halaman indonesian</Box>}
-          />
-          <Route
             path="pricing"
             element={
               <PrivateComponent>
